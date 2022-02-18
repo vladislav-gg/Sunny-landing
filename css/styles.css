@@ -60,4 +60,79 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
+
+.title {
+  position: absolute;
+  top: 20%;
+  font-size: 3rem;
+  color: white;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  letter-spacing: .6rem;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 45%;
+}
+
+.st-section-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  line-height: 1.5rem;
+  margin-top: 30px;
+}
+
+.left-box {
+  width: 50%;
+  height: 600px;
+  padding-left: 15%;
+}
+
+.right-box {
+  background: url(/images/desktop/image-transform.jpg) no-repeat center center;
+  background-size: cover;
+  width: 50%;
+  height: 600px;
+}
+
+.content-wrapper {
+  width: 500px;
+  margin-top: 25%;
+}
+
+.content-wrapper a {
+  text-decoration: none;
+  color: black;
+  font-family: "Fraunces", serif;
+  position: relative;
+  z-index: 3;
+}
+
+.content-wrapper a::after {
+  content: '';
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  background-color: #fad400;
+  opacity: 80%;
+  right: 0px;
+  top: 13px;
+  z-index: 0;
+  border-radius: 25px;
+}
 /*# sourceMappingURL=styles.css.map */

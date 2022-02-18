@@ -47,7 +47,8 @@ $body-size: 18px;
             box-shadow: inset 0 0 0 0 #54b3d6;
 
 
-            &:hover {
+            &:hover
+             {
                 color: black;
                 box-shadow: inset 100px 100px 100px 100px white;
             }
@@ -61,3 +62,76 @@ $body-size: 18px;
    justify-content: space-evenly;
 }
 
+.title{
+    position: absolute;
+    top:20%;
+    font-size: 3rem;
+    color: white;
+    font-family: $fraunces;
+    font-weight: 700;
+    letter-spacing: .6rem;
+}
+
+
+.arrow-icon{
+    position: absolute;
+    top: 45%;
+}
+
+.st-section-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+h2{
+    font-family: $fraunces;
+    font-size: 2rem;
+}
+
+p{
+    font-family: $barlow;
+    line-height: 1.5rem;
+    margin-top: 30px;
+}
+.left-box{
+    width: 50%;
+    height: 600px;
+    padding-left: 15%;
+
+}
+
+.right-box{
+    background: url(/images/desktop/image-transform.jpg) no-repeat center center;
+    background-size: cover;
+    width: 50%;
+    height: 600px;
+}
+.content-wrapper{
+    width: 500px;
+    margin-top: 25%;
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-family: $fraunces;
+        position: relative;
+        z-index: 3;
+
+        &::after{
+            content: '';
+            height: 10px;
+            width: 100%;
+            position: absolute;
+            background-color:  hsl(51, 100%, 49%);
+            opacity: 80%;
+            right: 0px;
+            top: 13px;
+            z-index: 0;
+            border-radius: 25px;
+
+        }
+    }
+}
