@@ -68,7 +68,7 @@
   color: white;
   font-family: "Fraunces", serif;
   font-weight: 700;
-  letter-spacing: .6rem;
+  letter-spacing: 0.6rem;
 }
 
 .arrow-icon {
@@ -127,7 +127,7 @@ p {
 }
 
 .content-wrapper a:hover::after {
-  content: '';
+  content: "";
   height: 10px;
   width: 100%;
   position: absolute;
@@ -193,5 +193,25 @@ p {
   width: 450px;
   margin-top: 60%;
   text-align: center;
+}
+
+.testimonials {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonials-wrapper {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=styles.css.map */
