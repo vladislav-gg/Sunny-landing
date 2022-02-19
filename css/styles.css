@@ -88,13 +88,16 @@
 
 h2 {
   font-family: "Fraunces", serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: #23303e;
 }
 
 p {
   font-family: "Barlow", sans-serif;
   line-height: 1.5rem;
   margin-top: 30px;
+  font-weight: 600;
+  color: #818498;
 }
 
 .left-box {
@@ -111,28 +114,84 @@ p {
 }
 
 .content-wrapper {
-  width: 500px;
+  width: 450px;
   margin-top: 25%;
 }
 
 .content-wrapper a {
   text-decoration: none;
-  color: black;
+  color: #23303e;
   font-family: "Fraunces", serif;
+  top: 50px;
   position: relative;
-  z-index: 3;
 }
 
-.content-wrapper a::after {
+.content-wrapper a:hover::after {
   content: '';
   height: 10px;
   width: 100%;
   position: absolute;
   background-color: #fad400;
-  opacity: 80%;
-  right: 0px;
+  opacity: 70%;
+  right: 0;
+  left: 0;
   top: 13px;
-  z-index: 0;
+  z-index: -1;
   border-radius: 25px;
+}
+
+.right-box-2nd {
+  background: url(/images/desktop/image-stand-out.jpg) no-repeat center center;
+  background-size: cover;
+  width: 50%;
+  height: 600px;
+}
+
+.left-box-graphic {
+  background: url(/images/desktop/image-graphic-design.jpg) no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left-box-graphic p {
+  color: #25564b;
+}
+
+.left-box-graphic h2 {
+  color: #25564b;
+}
+
+.right-box-graphic {
+  background: url(/images/desktop/image-photography.jpg) no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right-box-graphic p {
+  color: #19536b;
+}
+
+.right-box-graphic h2 {
+  color: #19536b;
+}
+
+.content-wrapper-graphic {
+  width: 450px;
+  margin-top: 60%;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

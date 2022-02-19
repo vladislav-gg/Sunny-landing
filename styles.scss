@@ -4,6 +4,18 @@
 $barlow: 'Barlow', sans-serif;
 $fraunces: 'Fraunces', serif;
 $body-size: 18px;
+// colors
+$Soft-red: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$Dark-green: hsl(167, 40%, 24%);
+$Dark-moderate: hsl(168, 34%, 41%);
+$Dark-blue: hsl(198, 62%, 26%);
+// neutral
+$dark-text: hsl(212, 27%, 19%);
+$grayish: hsl(213, 9%, 39%);
+$p-text: hsl(232, 10%, 55%);
+$Grayish-blue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
 
 
 *{
@@ -88,19 +100,21 @@ $body-size: 18px;
 
 h2{
     font-family: $fraunces;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: $dark-text;
 }
 
 p{
     font-family: $barlow;
     line-height: 1.5rem;
     margin-top: 30px;
+    font-weight: 600;
+    color: $p-text;
 }
 .left-box{
     width: 50%;
     height: 600px;
     padding-left: 15%;
-
 }
 
 .right-box{
@@ -110,28 +124,72 @@ p{
     height: 600px;
 }
 .content-wrapper{
-    width: 500px;
+    width: 450px;
     margin-top: 25%;
 
     a{
         text-decoration: none;
-        color: black;
+        color: $dark-text;
         font-family: $fraunces;
+        top: 50px;
         position: relative;
-        z-index: 3;
-
-        &::after{
+   
+        &:hover::after{
             content: '';
             height: 10px;
             width: 100%;
             position: absolute;
             background-color:  hsl(51, 100%, 49%);
-            opacity: 80%;
-            right: 0px;
+            opacity: 70%;
+            right: 0;
+            left: 0;
             top: 13px;
-            z-index: 0;
+            z-index: -1;
             border-radius: 25px;
-
         }
     }
+}
+
+.right-box-2nd{
+    background: url(/images/desktop/image-stand-out.jpg) no-repeat center center;
+    background-size: cover;
+    width: 50%;
+    height: 600px;
+}
+
+.left-box-graphic{
+    background: url(/images/desktop/image-graphic-design.jpg) no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 800px;
+    display:flex;
+    justify-content:center;
+    p{
+        color: $Dark-green;
+    }
+    h2{
+        color: $Dark-green;
+    }
+}
+.right-box-graphic{
+    background: url(/images/desktop/image-photography.jpg) no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 800px;
+    display:flex;
+    justify-content:center;
+    p{
+        color: $Dark-blue;
+    }
+    h2{
+        color: $Dark-blue;
+    }
+}
+
+.content-wrapper-graphic{
+    width: 450px;
+    margin-top: 60%;
+    text-align: center;
+  
+
 }
