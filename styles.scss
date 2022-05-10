@@ -252,6 +252,7 @@ p {
 	}
 }
 
+// FOOTER
 .footer-wrapper {
 	background-color: $Dark-moderate;
 	width: 100%;
@@ -278,5 +279,17 @@ p {
 	}
 	a:hover {
 		color: white;
+	}
+}
+.footer-icons {
+	margin-top: 50px;
+	width: 150px;
+	display: flex;
+	justify-content: space-between;
+
+	img:hover {
+		filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+			hue-rotate(90deg) brightness(105%) contrast(103%);
+		cursor: pointer;
 	}
 }

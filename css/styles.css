@@ -349,4 +349,21 @@ p {
 .footer-content a:hover {
   color: white;
 }
+
+.footer-icons {
+  margin-top: 50px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-icons img:hover {
+  -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(90deg) brightness(105%) contrast(103%);
+          filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(90deg) brightness(105%) contrast(103%);
+  cursor: pointer;
+}
 /*# sourceMappingURL=styles.css.map */
